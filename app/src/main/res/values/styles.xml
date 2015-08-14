@@ -1,0 +1,107 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+        <!-- Customize your theme here. -->
+
+</style>
+
+    <!-- the theme applied to the application or activity -->
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme"
+        parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar1</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBar1</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar1"
+        parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+
+
+        <!-- Support library compatibility -->
+
+
+        <item name="android:title">@string/app_name</item>
+        <item name="title">@string/app_name</item>
+    </style>
+
+    <!-- the theme applied to the application or activity -->
+    <style name="myTheme"
+        parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar"
+        parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:colorBackground">@color/yellow</item>
+        <item name="android:background">#decc22</item>
+    </style>
+
+
+
+        <style name="Crop"></style>
+
+        <style name="Crop.DoneCancelBar">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">@dimen/crop__bar_height</item>
+            <item name="android:orientation">horizontal</item>
+            <item name="android:divider">@drawable/crop__divider</item>
+            <item name="android:showDividers" tools:ignore="NewApi">middle</item>
+            <item name="android:dividerPadding" tools:ignore="NewApi">12dp</item>
+            <item name="android:background">@color/crop__button_bar</item>
+        </style>
+
+        <style name="Crop.ActionButton">
+            <item name="android:layout_width">0dp</item>
+            <item name="android:layout_height">match_parent</item>
+            <item name="android:layout_weight">1</item>
+            <item name="android:background">@drawable/crop__selectable_background</item>
+        </style>
+
+        <style name="Crop.ActionButtonText">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_gravity">center</item>
+            <item name="android:gravity">center_vertical</item>
+            <item name="android:paddingRight">20dp</item> <!-- Offsets left drawable -->
+            <item name="android:drawablePadding">8dp</item>
+            <item name="android:textColor">@color/crop__button_text</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:textSize">13sp</item>
+        </style>
+
+        <style name="Crop.ActionButtonText.Done">
+            <item name="android:drawableLeft">@drawable/crop__ic_done</item>
+            <item name="android:text">@string/crop__done</item>
+        </style>
+
+        <style name="Crop.ActionButtonText.Cancel">
+            <item name="android:drawableLeft">@drawable/crop__ic_cancel</item>
+            <item name="android:text">@string/crop__cancel</item>
+        </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <!-- Backward-compatible version of ?android:attr/buttonBarStyle -->
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <!-- Backward-compatible version of ?android:attr/buttonBarButtonStyle -->
+    <style name="ButtonBarButton" />
+
+
+</resources>

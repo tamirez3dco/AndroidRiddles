@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--two_col_row.xml-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:layout_width="fill_parent"
+    android:paddingBottom="10px"
+    android:paddingTop="10px"
+    android:paddingLeft="3px"
+    android:descendantFocusability="blocksDescendants"
+    android:id="@+id/word_item_layout">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <ImageView
+
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/wordImageBtn"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/leftTextView"
+
+            android:layout_below="@+id/wordImageBtn"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffffff"
+            android:textSize="26dp"
+            android:text="walla"
+            android:visibility="invisible"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

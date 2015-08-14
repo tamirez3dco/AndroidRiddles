@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:weightSum="1">
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:id="@+id/gridView"
+        android:focusable="true"
+        android:clickable="true"
+    />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/animatorRelativeView"
+        android:visibility="invisible">
+
+        <ImageView
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/animatorImage"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/leftTextView"
+
+            android:layout_below="@+id/animatorImage"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffffff"
+            android:textSize="100dp"
+            android:text="walla"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
