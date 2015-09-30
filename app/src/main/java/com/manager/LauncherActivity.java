@@ -21,7 +21,7 @@ import java.io.OutputStream;
 import adapters.GridAdapter;
 
 
-public class GridActivity extends Activity {
+public class LauncherActivity extends Activity {
 
     Button pickMeButton;
     Button typeMeButton;
@@ -46,8 +46,6 @@ public class GridActivity extends Activity {
             // create a File object for the parent directory
             try {
                 localFolder.mkdirs();
-                File outputFile = new File(localFolder, GridAdapter.folderPath);
-                FileOutputStream fos = new FileOutputStream(outputFile);
                 copyAssets();
             }
             catch (Exception e){

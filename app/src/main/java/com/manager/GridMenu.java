@@ -8,9 +8,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
@@ -80,7 +77,7 @@ public class GridMenu extends Activity {
 
     @Override
     public void onBackPressed() {
-        Intent i = new Intent(getApplicationContext(), GridActivity.class);
+        Intent i = new Intent(getApplicationContext(), LauncherActivity.class);
         i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         dataBaseAdapter.close();
         startActivity(i);

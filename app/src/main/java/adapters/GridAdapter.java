@@ -96,6 +96,7 @@ public class GridAdapter extends BaseAdapter
             try{
                 Bitmap theImage = imageList.get(position);
                 holder.wordImageButton.setImageBitmap(theImage);
+                holder.wordText.setText(textList.get(position));
             }catch (Exception e){
                 holder.wordImageButton.setImageResource(R.drawable.ic_launcher);
             }
@@ -111,8 +112,6 @@ public class GridAdapter extends BaseAdapter
     public static class ViewHolder {
         public ImageView wordImageButton;
         public TextView wordText;
-        public ImageButton playImageButton;
-
     }
 }
 

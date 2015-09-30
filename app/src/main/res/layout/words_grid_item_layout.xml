@@ -19,11 +19,11 @@
         <ImageView
 
             android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_height="120dp"
             android:id="@+id/wordImageBtn"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
             android:background="@drawable/ic_launcher" />
 
         <TextView
@@ -37,7 +37,7 @@
             android:textColor="#ffffffff"
             android:textSize="26dp"
             android:text="walla"
-            android:visibility="invisible"
+            android:visibility="visible"
         />
     </RelativeLayout>
 

@@ -14,36 +14,7 @@
         android:id="@+id/gridView"
         android:focusable="true"
         android:clickable="true"
+        android:horizontalSpacing="0dp"
+        android:verticalSpacing="0dp"
     />
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:id="@+id/animatorRelativeView"
-        android:visibility="invisible">
-
-        <ImageView
-
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/animatorImage"
-            android:layout_centerVertical="true"
-            android:background="@drawable/ic_launcher" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/leftTextView"
-
-            android:layout_below="@+id/animatorImage"
-            android:layout_centerHorizontal="true"
-            android:textColor="#ffffffff"
-            android:textSize="100dp"
-            android:text="walla"
-            />
-    </RelativeLayout>
-
 </RelativeLayout>
